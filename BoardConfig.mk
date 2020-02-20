@@ -11,13 +11,18 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := cortex-a53
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
+
+# Board Platform
+# It's not needed for booting TWRP, but it should be added
+TARGET_BOARD_PLATFORM := msm8953
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
