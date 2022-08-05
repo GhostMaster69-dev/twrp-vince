@@ -1,0 +1,3 @@
+on init
+    # DT2W
+    write /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input1/wake_gesture 1
