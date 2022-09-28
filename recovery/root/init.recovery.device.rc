@@ -1,3 +1,13 @@
 on init
     # DT2W
     write /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input1/wake_gesture 1
+
+# HVDCP
+service hvdcp_opti /system/bin/hvdcp_opti
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+on boot
+    start hvdcp_opti
