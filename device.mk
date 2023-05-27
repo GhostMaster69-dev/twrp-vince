@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Crypto
+TARGET_INCLUDE_CRYPTO_FBE := true
 TARGET_INCLUDE_CRYPTO_FDE := true
 TARGET_LEGACY_CRYPTO := true
 
