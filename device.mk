@@ -10,6 +10,9 @@ PRODUCT_RELEASE_NAME := vince
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
+# Decrypt FBE
+TARGET_INCLUDE_CRYPTO_FBE := true
+
 # Crypto
 ifeq ($(TARGET_INCLUDE_CRYPTO_FBE),true)
 TARGET_INCLUDE_CRYPTO := true
