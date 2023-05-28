@@ -8,7 +8,7 @@
 /cache          ext4    /dev/block/bootdevice/by-name/cache                     flags=fsflags="discard"
 
 # Data
-/data           ext4    /dev/block/bootdevice/by-name/userdata			flags=fsflags="discard"
+/data           ext4    /dev/block/bootdevice/by-name/userdata			flags=fileencryption=aes-256-xts:aes-256-cts:v1;fsflags="discard"
 
 # Modem
 /firmware       vfat    /dev/block/bootdevice/by-name/modem                     flags=display="Firmware";fsflags="ro";mounttodecrypt
