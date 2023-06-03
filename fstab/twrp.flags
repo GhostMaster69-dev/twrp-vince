@@ -1,11 +1,11 @@
 # mount point   fstype  device                      device2                     flags
 
 # Boot
-/boot           emmc    /dev/block/bootdevice/by-name/boot
-/recovery       emmc    /dev/block/bootdevice/by-name/recovery                  flags=backup=1
+/boot           emmc    /dev/block/bootdevice/by-name/boot			flags=display="Boot";backup=1;flashimg=1
+/recovery       emmc    /dev/block/bootdevice/by-name/recovery                  flags=display="Recovery";backup=1;flashimg=1
 
 # Cache
-/cache          ext4    /dev/block/bootdevice/by-name/cache                     flags=fsflags="discard"
+/cache          ext4    /dev/block/bootdevice/by-name/cache                     flags=display="Cache";fsflags="discard"
 
 # Data
 /data           ext4    /dev/block/bootdevice/by-name/userdata			flags=encryptable=footer;fsflags="discard"
